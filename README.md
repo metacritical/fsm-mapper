@@ -18,7 +18,7 @@ Will generate a project in `out` directory with the code generated in clojure.
 
 
 
-## Options
+## Visualize
 
 In order to visualize the FSM from specs/ direcory
 
@@ -28,6 +28,7 @@ In order to visualize the FSM from specs/ direcory
 The show flag should have the same name as the `edn` file without extension
 since the current implementation names generated namespaces based on file names.
 
+Also visualisation would not create any project from the FSM description.
 
 ## Running generated project
 
