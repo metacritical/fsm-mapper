@@ -26,7 +26,7 @@ In order to visualize the FSM from specs/ direcory
     $ lein run --file specs/count_fsm.edn --show count_fsm
 ```
 The show flag should have the same name as the `edn` file without extension
-since the current implementation names generated namespaces based on file names.
+since the current implementation uses generated namespaces based on file names.
 
 Also visualisation would not create any project from the FSM description.
 
