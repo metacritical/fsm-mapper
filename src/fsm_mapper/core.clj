@@ -1,6 +1,5 @@
 (ns fsm-mapper.core
-  (:require [fsm-mapper.command-line-parser :as cli]
-            [fsm-mapper.count-ab-mini :as cab-mini]))
+  (:require [fsm-mapper.command-line-parser :as cli]))
 
 
 (defn -main [& args]  

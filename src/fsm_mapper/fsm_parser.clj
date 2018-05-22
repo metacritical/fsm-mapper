@@ -1,6 +1,5 @@
 (ns fsm-mapper.fsm-parser
   (:require [clojure.spec.alpha :as s]
-            [fsm-mapper.count-ab-mini :as cab-mini]
             [fsm-mapper.parser-utils :as utils]
             [clojure.java.io :as io]
             [clojure.string :as str]
