@@ -1,0 +1,6 @@
+{:fsm/def_fsm [:count-ab 0 "aabaabcaacbabbcabcaabb"]
+   :fsm/transitions [[:start \a :found-a]
+                     [:found-a
+                      [\a :found-a]
+                      [\b {:action inc-val} :start]
+                      [\_  :start]]]}
