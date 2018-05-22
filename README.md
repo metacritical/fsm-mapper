@@ -1,34 +1,49 @@
-# fsm-mapper
+# FSM Mapper
 
-FIXME: description
+Created clojure projects from FSM (finite state machine) descriptions in `edn`
+format.
 
 ## Installation
 
-Download from http://example.com/FIXME.
-
+Run `lein install` before use.
 ## Usage
 
-FIXME: explanation
+Run : explanation
 
-    $ java -jar fsm-mapper-0.1.0-standalone.jar [args]
+```sh
+    $ lein run --file specs/count_fsm.edn 
+```
+
+Will generate a project in `out` directory with the code generated in clojure.
+
+
 
 ## Options
 
-FIXME: listing of options this app accepts.
+In order to visualize the FSM from specs/ direcory
 
-## Examples
+```sh
+    $ lein run --file specs/count_fsm.edn --show count_fsm
+```
+The show flag should have the same name as the `edn` file without extension
+since the current implementation names generated namespaces based on file names.
 
-...
 
-### Bugs
+## Running generated project
 
-...
+Once the project has been generated, change the directory to `out/[project-name]`
+and run :
+```sh
+    $ lein run
+```
 
-### Any Other Sections
-### That You Think
-### Might be Useful
+this should run the project.
 
-## License
+
+## Bugs
+A very limited proof of concept.
+
+
 
 Copyright © 2018 FIXME
 
